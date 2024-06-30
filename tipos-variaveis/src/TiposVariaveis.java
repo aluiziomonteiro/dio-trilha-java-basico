@@ -4,27 +4,28 @@
 public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
         
+        int a, b;
+        String result = "";
+        a = 5;
+        b = 6;
 
-        boolean value = true;
-        System.out.println(value);
-        System.out.println(!value);
-        System.out.println(!!value);
-        System.out.println(!!!value);
-        value = !value;
-        System.out.println("Reverse: "+value);
-        // int number = 5;
-        // System.out.println(number++);
-        // System.out.println(++number);
-        // System.out.println(number);
-        // System.out.println(- --number);
-        
-        // int number = 5;
-        // number = -number;
-        // System.out.println(number);
-        // System.out.println(--number);
-        // System.out.println(number--);
-        // System.out.println(++number);
-        // System.out.println(number++);
-        // System.out.println(number * -1);
-    }
+        // if (a == b){
+        //     result = "true";
+        // }else{
+        //     result = "false";
+        // }
+
+        result = a == b ? "true" : "false";
+        System.out.println("Result: "+result);
+
+        /*The ternary operator can be used with 
+        * expressions that are not Boolean, 
+        * as long as the result type is compatible 
+        * with the expected return value types
+        *
+        */
+
+        int biggest = (a > b)? a : b;
+        System.out.println(biggest+" is the biggest number");
+        }
 }
